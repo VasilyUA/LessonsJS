@@ -50,10 +50,8 @@ function Validate() {
     } else if (period > 24 || period < 6) {
       var error = document.querySelector(".error");
       error.innerHTML = "To Few!.";
-    } //else if (id.length != 10) {
-    //   var error = document.querySelector(".error");
-    //   error.innerHTML = "Incorrect ID.";
-    // }
+    }
+
     else {
       console.log("Success!");
       var newClinet = new SaveData(name, surname, amount, period, rate);
